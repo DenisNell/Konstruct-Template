@@ -60,6 +60,7 @@ body, p, h1, h2, h3, h4, h5, input {
 
 .header_title {
     display: block;
+    max-width: 576px;
     margin: 0 auto;
     width: 100%;
     padding-left: 8px;
@@ -466,6 +467,9 @@ input {
     .navbar_logo{
         margin-bottom: 25px;
     }
+    .about_title-line{
+        margin-bottom: 15px;
+    }
     .services_title-line{
         margin: 0 auto;
         margin-bottom: 15px;
@@ -475,6 +479,9 @@ input {
     }
     .services_cards-flex{
         margin-bottom: 0;
+    }
+    .Newsletter{
+        min-height: 145px;
     }
     .Newsletter_Title{
         margin-bottom: 15px;
