@@ -46,6 +46,9 @@ body, p, h1, h2, h3, h4, h5, input {
 
 .header {
     background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Отключает повторение */
     min-height: 768px;
 }
 .header_logo{
@@ -58,6 +61,7 @@ body, p, h1, h2, h3, h4, h5, input {
 .header_title {
     display: block;
     margin: 0 auto;
+    width: 100%;
     padding-left: 8px;
     margin-bottom: 16px;
 }
@@ -196,7 +200,8 @@ padding: 15px;
 
 }
 .services_text {
-    width: 405px;
+    max-width: 405px;
+    width: 100%;
     margin-right: 30px;
 }
 
@@ -247,6 +252,9 @@ padding: 15px;
 .label{}
 .GetInTouch {
     background-image: url(img/get_bg.jpg);
+    background-size: cover;
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Отключает повторение */
     height: 499px;
 }
 .GetInTouch_Title {
@@ -289,7 +297,7 @@ padding: 15px;
 }
 .Newsletter_BoxFlex {
     display: flex;
-    width: 683px;
+    max-width: 683px;
     margin: 0 auto;
     justify-content: space-between;
     padding-top: 30px;
@@ -338,7 +346,7 @@ input {
 
 .footer_BoxGrid {
     display: grid;
-    width: 940px;
+    max-width: 940px;    
     grid-template-columns: 250px 1fr 141px;
     padding-top: 40px;
     gap: 120px;
@@ -413,4 +421,104 @@ input {
 }
 .footer_CopyrightIcon:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width:1024px){
+    .navbar_flex, .about_box-flex, .Newsletter_BoxFlex, .services_top-flex, .services_info, .services_cards-flex, .footer_CopyrightFlex, .about__info, .footer{
+        padding: 0 15px;
+    }
+    .navbar_flex{
+        padding-top: 15px;
+    }
+    .Newsletter_BoxFlex{
+        padding-top: 25px;
+    }
+    .footer_BoxGrid{
+        max-width: 768px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
+        gap: 25px;
+        justify-items: center;
+    }
+    .footer_LinksFlex{
+        flex-wrap: wrap;
+    }
+    .footer_Text{
+        max-width: 250px;
+    }
+    .footer_Contact{
+        max-width: 250px;
+        margin-bottom: 15px;
+    }
+    .footer_CopyrightFlex{
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width:768px){
+    .footer_BoxGrid{
+        grid-template-columns: 1fr;
+    }
+    .navbar_flex, .about_box-flex, .Newsletter_BoxFlex, .services_top-flex, .services_info, .services_cards-flex, .footer_CopyrightFlex {
+        flex-direction: column;
+        align-items: center;
+        /* padding: 0 15px; */
+    }
+    .navbar_logo{
+        margin-bottom: 25px;
+    }
+    .services_title-line{
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .services_card{
+        margin-bottom: 15px;
+    }
+    .services_cards-flex{
+        margin-bottom: 0;
+    }
+    .Newsletter_Title{
+        margin-bottom: 15px;
+    }
+    
+    .footer_BoxGrid{
+        justify-items: center;
+    }
+    .footer_Title{
+        padding-top: 15px;
+    }
+    .footer_InfoCompany{
+        max-width: 250px;
+        text-align: center;
+    }
+    .footer_Linksbox{
+        text-align: center;
+    }
+    .footer_LinksTitle{
+        padding-top: 15px;
+    }
+    .footer_Contact{
+        max-width: 250px;
+        text-align: center;
+    }
+    .footer_ContactTitle{
+        padding-top: 15px;
+    }
+    .footer_ContactText{
+        margin-bottom: 15px;
+    }
+    .footer_CopyrightFlex{
+        gap: 15px;
+    }
+    .footer_CopyrightSocial{
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width:500px){
+    .about_cards-flex, .Newsletter_Input{
+        flex-direction: column;
+        align-items: center;
+    }
+    input, .Newsletter_Button{
+        margin-bottom: 15px;
+    }
 }
