@@ -47,8 +47,8 @@ body, p, h1, h2, h3, h4, h5, input {
 .header {
     background-image: url(img/bg.jpg);
     background-size: cover;
-    background-position: center; /* Центрирует изображение */
-    background-repeat: no-repeat; /* Отключает повторение */
+    background-position: center;
+    background-repeat: no-repeat;
     min-height: 768px;
 }
 .header_logo{
@@ -254,8 +254,8 @@ padding: 15px;
 .GetInTouch {
     background-image: url(img/get_bg.jpg);
     background-size: cover;
-    background-position: center; /* Центрирует изображение */
-    background-repeat: no-repeat; /* Отключает повторение */
+    background-position: center;
+    background-repeat: no-repeat;
     height: 499px;
 }
 .GetInTouch_Title {
@@ -462,7 +462,6 @@ input {
     .navbar_flex, .about_box-flex, .Newsletter_BoxFlex, .services_top-flex, .services_info, .services_cards-flex, .footer_CopyrightFlex {
         flex-direction: column;
         align-items: center;
-        /* padding: 0 15px; */
     }
     .navbar_logo{
         margin-bottom: 25px;
