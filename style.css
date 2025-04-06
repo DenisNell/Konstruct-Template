@@ -111,6 +111,7 @@ color: var(--white);
     font-size: 12px;
     letter-spacing: 0.09em;
     color: var(--gray);
+    transition: 0.5s ease;
 }
 .navbar_menu_item:hover{
     color: var(--blu);
@@ -204,6 +205,9 @@ padding: 15px;
     height: 40px;
     background-color: var(--blu);
 }
+.services_button:hover{
+    cursor: pointer;
+}
 .services_button_text {
     font-family: var(--font-family);
     font-weight: 700;
@@ -265,6 +269,9 @@ padding: 15px;
     height: 40px;
     margin: 0 auto;
 }
+.GetInTouch_Button:hover{
+    cursor: pointer;
+}
 .GetInTouch_ButtonText {
     font-family: var(--font-family);
     font-weight: 700;
@@ -301,14 +308,15 @@ padding: 3px;
 }
 input {
     width: 250px;
-    /* border-radius: 0; */
     border: none;
 }
 .Newsletter_Button {
     width: 150px;
     height: 40px;
     background-color: var(--blu);
-
+}
+.Newsletter_Button:hover{
+    cursor: pointer;
 }
 .Newsletter_ButtonText {
     font-family: var(--font-family);
@@ -318,4 +326,91 @@ input {
     text-align: center;
     color: var(--white);
     padding-top: 13px;
+}
+
+/* Footer */
+.label{}
+
+.footer {
+    min-height: 240px;
+    background: #141a20;
+}
+
+.footer_BoxGrid {
+    display: grid;
+    width: 940px;
+    grid-template-columns: 250px 1fr 141px;
+    padding-top: 40px;
+    gap: 120px;
+}
+
+/* left block */
+.footer_Title, .footer_LinksTitle, .footer_ContactTitle{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+.footer_Logo {
+    margin-bottom: 15px;
+}
+.footer_Text {
+    font-size: 11px;
+    color: var(--white);
+}
+
+/* Center Block */
+.footer_LinksFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_LinksColumnMenuText {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 227%;
+    letter-spacing: 0.08em;
+    color: var(--white);
+    transition: 0.5s ease;
+}
+.footer_LinksColumnMenuText:hover{
+    color: var(--blu);
+    cursor: pointer;
+}
+
+/* Right Block */
+.label{}
+.footer_ContactText {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 145%;
+    letter-spacing: 0.08em;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.footer_ContactText:last-child{
+    margin-bottom: 0;
+}
+
+.footer_CopyrightBG{
+    background: #171819;
+}
+.footer_CopyrightFlex {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    min-height: 60px;
+    padding-top: 25px;
+}
+.footer_CopyrightText {
+    color: var(--white);
+    font-size: 11px;
+}
+.footer_CopyrightIcon:hover {
+    cursor: pointer;
 }
